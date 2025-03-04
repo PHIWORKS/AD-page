@@ -1,7 +1,7 @@
 {
-  "name": "Podo Player",
-  "short_name": "PodoPlayer",
-  "start_url": "https://makerseok.github.io/pwa-player/index.html",
+  "name": "AD Player",
+  "short_name": "ADPlayer",
+  "start_url": "https://kingntop.github.io/phiworks/index.html",
   "display": "standalone",
   "background_color": "#1f2a66",
   "theme_color": "#212121",
