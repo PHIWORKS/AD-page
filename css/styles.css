@@ -14,8 +14,8 @@ html {
 /* colours */
 :root {
   --primary: #212121;
-  --secondary: #b388ff;
-  --title: #b388ff;
+  --secondary: #ffa500;
+  --title: #ffa500;
   --font-color: #f5f5f5;
 }
 
@@ -187,6 +187,7 @@ nav .sidenav-trigger {
   position: fixed;
   top: 6rem;
   right: 1rem;
+  background-color: var(--secondary);
 }
 
 /* form */
