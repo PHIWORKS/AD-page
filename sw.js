@@ -5,7 +5,6 @@ const FONT_CACHE_NAME = 'site-font-v1';
 const APEX_CACHE_NAME = 'site-apex-v1';
 
 const assets = [
-  '/pwa-video-player-opodo/',
   'index.html',
   'sw-installed.html',
   'js/app.js',
@@ -25,48 +24,46 @@ const assets = [
   'css/jquery-ui.min.css',
   'js/axios.min.js',
   'js/jquery-ui.min.js',
-  'js/mqttws31.min.js',
   'js/player.js',
   'js/ws.js',
   'https://fonts.googleapis.com/icon?family=Material+Icons',
   'https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;700&display=swap',
 ];
 
-// cache size limit function
+// Cache size limit function
 const limitCacheSize = (name, size) => {
   caches.open(name).then(cache => {
     cache.keys().then(keys => {
       if (keys.length > size) {
-        cache.delete(keys[0]).then(limitCacheSize(name, size));
+        cache.delete(keys[0]).then(() => limitCacheSize(name, size));
       }
     });
   });
 };
 
-// install event
+// Install event
 self.addEventListener('install', event => {
-  console.log('service worker has been installed');
+  console.log('Service worker has been installed');
   event.waitUntil(
     caches.open(STATIC_CACHE_NAME).then(cache => {
-      console.log('caching shell assets');
+      console.log('Caching shell assets');
       cache.addAll(assets);
     }),
   );
 });
 
-// skipWaiting
+// Skip waiting
 addEventListener('message', function (messageEvent) {
   if (messageEvent.data === 'skipWaiting') {
     return skipWaiting();
   }
 });
 
-// activate event
+// Activate event
 self.addEventListener('activate', event => {
-  console.log('service worker has been activated');
+  console.log('Service worker has been activated');
   event.waitUntil(
     caches.keys().then(keys => {
-      // console.log(keys);
       return Promise.all(
         keys
           .filter(
@@ -83,9 +80,8 @@ self.addEventListener('activate', event => {
   );
 });
 
-// fetch event
+// Fetch event
 self.addEventListener('fetch', event => {
-  // console.log('fetch event', event);
   const scope = self.registration.scope;
   const url = new URL(event.request.url);
   const queryReplacedUrl = url.href.replace(url.search, '').split('?')[0].split('#')[0];
@@ -179,7 +175,7 @@ const fetchVideo = async request => {
   const response = await fetch(request);
   if (response.status === 200) {
     await cacheVideo(request.url, response.clone());
-    console.log('video cached', request.url);
+    console.log('Video cached', request.url);
   }
   return response;
 };
