@@ -92,8 +92,10 @@ const initPlayerUi = position => {
         const position = {
           width: ui.helper.width(),
           height: ui.helper.height(),
-          top: Math.max(ui.offset.top, 0),
-          left: Math.max(ui.offset.left, 0),
+          // top: Math.max(ui.offset.top, 0),
+          // left: Math.max(ui.offset.left, 0),
+          top: ui.offset.top,
+          left: ui.offset.left,
         };
         applyPosition(position);
       },
