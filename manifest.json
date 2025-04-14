@@ -1,7 +1,7 @@
 {
   "name": "AD Player",
   "short_name": "ADPlayer",
-  "start_url": "https://kingntop.github.io/phiworks/index.html",
+  "start_url": "/phiworks/index.html",
   "display": "standalone",
   "background_color": "#1f2a66",
   "theme_color": "#212121",
