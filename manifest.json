@@ -7,6 +7,8 @@
   "theme_color": "#212121",
   "orientation": "any",
   "form_factor": "wide" ,
+  "id": "ADPlayer",
+  "scope": "/phiworks/",
   "icons": [
     {
       "src": "img/icons/16.png",
