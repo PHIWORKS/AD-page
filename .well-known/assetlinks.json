@@ -1,0 +1,8 @@
+[{
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "io.github.kingntop.twa",
+      "sha256_cert_fingerprints": ["9F:BE:B7:DE:4A:C8:CF:C4:2A:9F:B8:31:1E:3D:35:68:3F:3B:42:B4:11:EC:1A:EB:D7:F1:61:A1:64:8B:89:E5"]
+    }
+  }]
