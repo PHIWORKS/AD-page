@@ -1,12 +1,12 @@
 {
   "name": "AD Player",
   "short_name": "ADPlayer",
-  "start_url": "/phiworks/index.html",
+  "start_url": "/phiworks/",
   "display": "standalone",
   "background_color": "#1f2a66",
   "theme_color": "#212121",
   "orientation": "any",
-  "form_factor": "wide" ,
+  "form_factor": "wide",
   "id": "ADPlayer",
   "scope": "/phiworks/",
   "icons": [
