@@ -3,6 +3,6 @@
     "target": {
       "namespace": "android_app",
       "package_name": "io.github.kingntop.twa",
-      "sha256_cert_fingerprints": ["9F:BE:B7:DE:4A:C8:CF:C4:2A:9F:B8:31:1E:3D:35:68:3F:3B:42:B4:11:EC:1A:EB:D7:F1:61:A1:64:8B:89:E5"]
+      "sha256_cert_fingerprints": ["A8:E9:BC:71:CA:EA:71:30:76:F0:4B:98:6E:C4:FB:9E:FB:BB:EC:9A:05:62:DD:75:FA:05:BB:32:6C:CD:67:21"]
     }
   }]
