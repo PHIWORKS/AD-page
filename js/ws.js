@@ -59,7 +59,7 @@ const initWebsocket = () => {
     timeout: 3,
     onSuccess: onConnect,
     onFailure: onFailure,
-    userName: 'ADMIN',
+    userName: 'spacebank',
     password: 'demo00',
     reconnect: true,
     // reconnectInterval: 10,
