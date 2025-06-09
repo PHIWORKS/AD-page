@@ -1,5 +1,7 @@
-const host = 'cs.raiid.ai';
-const port = 9001;
+// const host = 'cs.raiid.ai';
+const host = 'test.mosquitto.org';
+// const port = 9001;
+const port = 8081;
 let mqttRetryInterval = 1000;
 
 let mqtt;
@@ -59,8 +61,8 @@ const initWebsocket = () => {
     timeout: 3,
     onSuccess: onConnect,
     onFailure: onFailure,
-    userName: 'spacebank',
-    password: 'demo00',
+    // userName: 'spacebank',
+    // password: 'demo00',
     reconnect: true,
     // reconnectInterval: 10,
   };
