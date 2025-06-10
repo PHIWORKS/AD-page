@@ -57,7 +57,7 @@ async function onMessageArrived(res) {
 
 const initWebsocket = () => {
   const options = {
-    useSSL: true,
+    useSSL: false,
     timeout: 3,
     onSuccess: onConnect,
     onFailure: onFailure,
